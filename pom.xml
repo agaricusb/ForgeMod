@@ -23,6 +23,24 @@
     <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
     <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
+  <profiles>
+   <profile>
+    <activation>
+        <activeByDefault>true</activeByDefault>
+    </activation>
+    <id>built</id>
+    <dependencies>
+      <!-- after the remapped artifact is built, add it a dependency -->
+      <dependency>
+        <groupId>net.minecraftforge</groupId>
+        <artifactId>minecraft-forge</artifactId>
+        <version>${forge.version}${forge.suffix}</version>
+        <type>jar</type>
+        <scope>compile</scope>
+      </dependency>
+    </dependencies>
+   </profile>
+  </profiles>
   <dependencies>
     <dependency>
         <groupId>org.ow2.asm</groupId>
@@ -50,14 +68,6 @@
         <groupId>net.sourceforge.argo</groupId>
         <artifactId>argo</artifactId>
         <version>2.25</version>
-    </dependency>
-    <!-- Installed with: mvn initialize -->
-    <dependency>
-      <groupId>net.minecraftforge</groupId>
-      <artifactId>minecraft-forge</artifactId>
-      <version>${forge.version}${forge.suffix}</version>
-      <type>jar</type>
-      <scope>compile</scope>
     </dependency>
   </dependencies>
   <build>

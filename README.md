@@ -13,7 +13,7 @@ Add to your parent pom.xml, for example:
 
 then run:
 
-    mvn initialize
+    mvn initialize -P -built
     mvn package
 
 The mod will be compiled and reobfuscated in `target/`.
