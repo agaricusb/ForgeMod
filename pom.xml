@@ -7,7 +7,7 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.4.7-6.6.2.534-1</version>
+  <version>1.4.7-6.6.2.534-R2</version> <!-- ${minecraft.version}-${forge.version}-${forgemodparent.revision} -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
@@ -17,6 +17,7 @@
     <minecraft_version>1_4_7</minecraft_version>
     <forge.build>534</forge.build>
     <forge.version>6.6.2.${forge.build}</forge.version>
+    <forgemodparent.revision>R2</forgemodparent.revision> <!-- increment when this parent pom is updated -->
     <fml.at>https://raw.github.com/MinecraftForge/FML/20337b6e8aec12d2793edb376bdf8dea119cba5f/common/fml_at.cfg</fml.at>
     <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/4299aa22ffcc7770499b5edc4ec330da042a5eb8/common/forge_at.cfg</forge.at>
     <mcp.mappings>https://raw.github.com/MinecraftForge/FML/1bd6847bc80f51b06544068011f7df3218f13999/conf/</mcp.mappings>
@@ -34,7 +35,7 @@
       <dependency>
         <groupId>net.minecraftforge</groupId>
         <artifactId>minecraft-forge</artifactId>
-        <version>${forge.version}${forge.suffix}</version>
+        <version>${forge.version}-${forgemodparent.revision}${forge.suffix}</version>
         <type>jar</type>
         <scope>compile</scope>
       </dependency>
@@ -95,7 +96,7 @@
                     <configuration>
                         <groupId>net.minecraftforge</groupId>
                         <artifactId>minecraft-forge</artifactId>
-                        <version>${forge.version}${forge.suffix}</version>
+                        <version>${forge.version}-${forgemodparent.revision}${forge.suffix}</version>
                         <inJars>
                             <param>http://assets.minecraft.net/${minecraft_version}/minecraft_server.jar</param>
                             <param>http://assets.minecraft.net/${minecraft_version}/minecraft.jar</param>
