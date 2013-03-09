@@ -85,7 +85,7 @@
       <plugin>
             <groupId>net.md-5</groupId>
             <artifactId>specialsource-maven-plugin</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <executions>
                 <execution>
                     <id>install-remapped-forge</id>
