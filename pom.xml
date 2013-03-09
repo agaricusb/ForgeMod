@@ -106,6 +106,7 @@
                         <accessTransformers>
                             <param>${fml.at}</param>
                             <param>${forge.at}</param>
+                            <param>pattern:*-synthetic **</param> <!-- magic -->
                             <param>${mod.at}</param> <!-- optional AT from mod itself -->
                         </accessTransformers>
                     </configuration>
