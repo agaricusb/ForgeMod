@@ -106,7 +106,7 @@
                         <accessTransformers>
                             <param>${fml.at}</param>
                             <param>${forge.at}</param>
-                            <param>${mod.at}</param> <!-- TODO: list instead of singular value? -->
+                            <param>${mod.at}</param> <!-- optional AT from mod itself -->
                         </accessTransformers>
                     </configuration>
                 </execution>
@@ -120,7 +120,7 @@
                         <srgIn>${mcp.mappings}</srgIn>
                         <reverse>true</reverse>
                         <remappedDependencies>
-                            <param>net.minecraftforge:minecraft-forge:${forge.version}:jar</param>
+                            <param>net.minecraftforge:minecraft-forge:${forge.version}-${forgemodparent.revision}${forge.suffix}:jar</param>
                         </remappedDependencies>
                     </configuration>
                 </execution>
