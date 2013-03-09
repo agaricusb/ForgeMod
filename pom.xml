@@ -7,20 +7,20 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.4.7-6.6.2.534-R2</version> <!-- ${minecraft.version}-${forge.version}-${forgemodparent.revision} -->
+  <version>1.5-7.7.0.562-R1</version> <!-- ${minecraft.version}-${forge.version}-${forgemodparent.revision} -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <minecraft.version>1.4.7</minecraft.version>
-    <minecraft_version>1_4_7</minecraft_version>
-    <forge.build>534</forge.build>
-    <forge.version>6.6.2.${forge.build}</forge.version>
-    <forgemodparent.revision>R2</forgemodparent.revision> <!-- increment when this parent pom is updated -->
-    <fml.at>https://raw.github.com/MinecraftForge/FML/20337b6e8aec12d2793edb376bdf8dea119cba5f/common/fml_at.cfg</fml.at>
-    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/4299aa22ffcc7770499b5edc4ec330da042a5eb8/common/forge_at.cfg</forge.at>
-    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/1bd6847bc80f51b06544068011f7df3218f13999/conf/</mcp.mappings>
+    <minecraft.version>1.5</minecraft.version>
+    <minecraft_version>1_5</minecraft_version>
+    <forge.build>562</forge.build>
+    <forge.version>7.7.0.${forge.build}</forge.version>
+    <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
+    <fml.at>https://raw.github.com/MinecraftForge/FML/master/common/fml_at.cfg</fml.at>
+    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/master/common/forge_at.cfg</forge.at>
+    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/master/conf/</mcp.mappings>
     <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
     <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
@@ -51,9 +51,7 @@
     <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>12.0.1</version>
-        <type>jar</type>
-        <scope>provided</scope>
+        <version>14.0-rc3</version>
     </dependency>
     <dependency>
         <groupId>org.lwjgl.lwjgl</groupId>
@@ -68,7 +66,7 @@
     <dependency>
         <groupId>net.sourceforge.argo</groupId>
         <artifactId>argo</artifactId>
-        <version>2.25</version>
+        <version>3.2</version>
     </dependency>
   </dependencies>
   <build>
