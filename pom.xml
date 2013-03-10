@@ -7,7 +7,7 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.5-7.7.0.562-R1</version> <!-- ${minecraft.version}-${forge.version}-${forgemodparent.revision} -->
+  <version>1.5-7.7.0.566-R1</version> <!-- ${minecraft.version}-${forge.version}-${forgemodparent.revision} -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
@@ -15,8 +15,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <minecraft.version>1.5</minecraft.version>
     <minecraft_version>1_5</minecraft_version>
-    <forge.build>562</forge.build>
-    <forge.version>7.7.0.${forge.build}</forge.version>
+    <forge.majorversion>7</forge.majorversion>
+    <forge.minorversion>7</forge.minorversion>
+    <forge.revisionversion>0</forge.revisionversion>
+    <forge.build>566</forge.build>
+    <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
+    <forge.version>${forge.mainversion}.${forge.build}</forge.version>
     <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
     <fml.at>https://raw.github.com/MinecraftForge/FML/master/common/fml_at.cfg</fml.at>
     <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/master/common/forge_at.cfg</forge.at>
