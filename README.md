@@ -8,7 +8,7 @@ Add to your parent pom.xml, for example:
       <parent>
         <groupId>net.md-5</groupId>
         <artifactId>ForgeMod</artifactId>
-        <version>1.4.7-6.6.2.534-R2</version>
+        <version>1.5-7.7.0.566-R1</version>
       </parent>
 
 then run:
