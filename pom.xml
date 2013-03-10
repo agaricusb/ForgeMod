@@ -87,7 +87,7 @@
       <plugin>
             <groupId>net.md-5</groupId>
             <artifactId>specialsource-maven-plugin</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
             <executions>
                 <execution>
                     <id>install-remapped-forge</id>
@@ -121,7 +121,7 @@
                     </goals>
                     <configuration>
                         <srgIn>${mcp.mappings}</srgIn>
-                        <reverse>true</reverse>
+                        <numeric>true</numeric>
                         <remappedDependencies>
                             <param>net.minecraftforge:minecraft-forge:${forge.version}-${forgemodparent.revision}${forge.suffix}:jar</param>
                         </remappedDependencies>
