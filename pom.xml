@@ -28,6 +28,18 @@
     <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
     <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
+  <repositories>
+    <repository>
+      <id>sonatype-oss-public</id>
+      <url>https://oss.sonatype.org/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
   <profiles>
    <profile>
     <activation>
