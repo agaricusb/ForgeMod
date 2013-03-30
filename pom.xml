@@ -7,24 +7,25 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.5-7.7.0-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
+  <version>1.5-7.7.1-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <minecraft.version>1.5</minecraft.version>
-    <minecraft_version>1_5</minecraft_version>
+    <minecraft.version>1.5.1</minecraft.version>
+    <minecraft_version>1_5_1</minecraft_version>
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>7</forge.minorversion>
-    <forge.revisionversion>0</forge.revisionversion>
-    <forge.build>566</forge.build>
+    <forge.revisionversion>1</forge.revisionversion>
+    <forge.build>622</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
     <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
     <fml.at>https://raw.github.com/MinecraftForge/FML/master/common/fml_at.cfg</fml.at>
     <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/master/common/forge_at.cfg</forge.at>
     <mcp.mappings>https://raw.github.com/MinecraftForge/FML/master/conf/</mcp.mappings>
+    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/master/${minecraft.version}/pkgmcp2numpkg.srg</reobf.mappings> <!-- TODO: generate -->
     <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
     <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
@@ -116,7 +117,7 @@
                             <param>http://assets.minecraft.net/${minecraft_version}/minecraft.jar</param>
                             <param>http://files.minecraftforge.net/minecraftforge/minecraftforge-universal-${minecraft.version}-${forge.version}.zip</param>
                         </inJars>
-                        <srgIn>${mcp.mappings}</srgIn>
+                        <srgIn>${mcp.mappings}</srgIn> <!-- obf -> mcp csvnames for development -->
                         <accessTransformers>
                             <param>${fml.at}</param>
                             <param>${forge.at}</param>
@@ -132,8 +133,7 @@
                         <goal>remap</goal>
                     </goals>
                     <configuration>
-                        <srgIn>${mcp.mappings}</srgIn>
-                        <numeric>true</numeric>
+                        <srgIn>${reobf.mappings}</srgIn> <!-- mcp csvnames -> mcp srgnames for version-independence -->
                         <remappedDependencies>
                             <param>net.minecraftforge:minecraft-forge:${forge.version}-${forgemodparent.revision}${forge.suffix}:jar</param>
                         </remappedDependencies>
