@@ -8,7 +8,7 @@ Add to your parent pom.xml, for example (Minecraft 1.5; [1.4.7](https://github.c
       <parent>
         <groupId>net.md-5</groupId>
         <artifactId>ForgeMod</artifactId>
-        <version>1.5-7.7.0.566-R1</version>
+        <version>1.5-7.7.1-SNAPSHOT</version>
       </parent>
 
 then run:

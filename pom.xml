@@ -7,7 +7,7 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.5-7.7.1-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
+  <version>1.5.1-7.7.1-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
@@ -18,10 +18,10 @@
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>7</forge.minorversion>
     <forge.revisionversion>1</forge.revisionversion>
-    <forge.build>622</forge.build>
+    <forge.build>652</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
-    <forgemodparent.revision>R2</forgemodparent.revision> <!-- increment when this parent pom is updated -->
+    <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
     <fml.at>https://raw.github.com/MinecraftForge/FML/eff464cf0e656d92dfedf16e79e5cd6c36b9fc76/common/fml_at.cfg</fml.at>
     <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/727e27e19161de70bd4aeb8d9afb229c29872da0/common/forge_at.cfg</forge.at>
     <mcp.mappings>https://raw.github.com/MinecraftForge/FML/eff464cf0e656d92dfedf16e79e5cd6c36b9fc76/conf/</mcp.mappings>
