@@ -18,14 +18,14 @@
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>7</forge.minorversion>
     <forge.revisionversion>1</forge.revisionversion>
-    <forge.build>652</forge.build>
+    <forge.build>656</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
     <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
-    <fml.at>https://raw.github.com/MinecraftForge/FML/eff464cf0e656d92dfedf16e79e5cd6c36b9fc76/common/fml_at.cfg</fml.at>
-    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/727e27e19161de70bd4aeb8d9afb229c29872da0/common/forge_at.cfg</forge.at>
-    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/eff464cf0e656d92dfedf16e79e5cd6c36b9fc76/conf/</mcp.mappings>
-    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/363513b299a03f9ce85c744aec9fa850aac224f4/1.5.1/pkgmcp2numpkg.srg</reobf.mappings><!-- TODO: generate -->
+    <fml.at>https://raw.github.com/MinecraftForge/FML/8f35adca7a41c280a4b63d4787f042f615966cac/common/fml_at.cfg</fml.at>
+    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/6b1c46cc4a74193b08c5df28caf8b700b1681518/common/forge_at.cfg</forge.at>
+    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/8f35adca7a41c280a4b63d4787f042f615966cac/conf/</mcp.mappings>
+    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/4ba30da18cf0cdba67122fff783d3f4534abd8b2/1.5.1/pkgmcp2numpkg.srg</reobf.mappings>
     <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
     <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
