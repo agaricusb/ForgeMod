@@ -7,7 +7,7 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.5.1-7.7.1-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
+  <version>1.5.1-7.7.2-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
@@ -17,8 +17,8 @@
     <minecraft_version>1_5_1</minecraft_version>
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>7</forge.minorversion>
-    <forge.revisionversion>1</forge.revisionversion>
-    <forge.build>656</forge.build>
+    <forge.revisionversion>2</forge.revisionversion>
+    <forge.build>682</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
     <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
