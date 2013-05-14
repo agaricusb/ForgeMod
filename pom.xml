@@ -7,25 +7,25 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.5.1-7.7.2-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
+  <version>1.5.2-7.8.0-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <minecraft.version>1.5.1</minecraft.version>
-    <minecraft_version>1_5_1</minecraft_version>
+    <minecraft.version>1.5.2</minecraft.version>
+    <minecraft_version>1_5_2</minecraft_version>
     <forge.majorversion>7</forge.majorversion>
-    <forge.minorversion>7</forge.minorversion>
-    <forge.revisionversion>2</forge.revisionversion>
-    <forge.build>682</forge.build>
+    <forge.minorversion>8</forge.minorversion>
+    <forge.revisionversion>0</forge.revisionversion>
+    <forge.build>684</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
     <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
-    <fml.at>https://raw.github.com/MinecraftForge/FML/8f35adca7a41c280a4b63d4787f042f615966cac/common/fml_at.cfg</fml.at>
-    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/6b1c46cc4a74193b08c5df28caf8b700b1681518/common/forge_at.cfg</forge.at>
-    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/8f35adca7a41c280a4b63d4787f042f615966cac/conf/</mcp.mappings>
-    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/4ba30da18cf0cdba67122fff783d3f4534abd8b2/1.5.1/pkgmcp2numpkg.srg</reobf.mappings>
+    <fml.at>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/common/fml_at.cfg</fml.at>
+    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/cd40aba38e9b6d2753faa6b4dc8d083dc753b0de/common/forge_at.cfg</forge.at>
+    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/conf/</mcp.mappings>
+    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/master/1.5.2/pkgmcp2numpkg.srg</reobf.mappings>
     <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
     <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
