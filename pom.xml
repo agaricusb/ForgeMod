@@ -21,7 +21,7 @@
     <forge.build>703</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
-    <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
+    <forgemodparent.revision>R2</forgemodparent.revision> <!-- increment when this parent pom is updated -->
     <fml.at>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/common/fml_at.cfg</fml.at>
     <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/cd40aba38e9b6d2753faa6b4dc8d083dc753b0de/common/forge_at.cfg</forge.at>
     <mcp.mappings>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/conf/</mcp.mappings>
@@ -124,6 +124,7 @@
                             <param>pattern:*-synthetic **</param> <!-- magic -->
                             <param>${mod.at}</param> <!-- optional AT from mod itself -->
                         </accessTransformers>
+                        <generateAPI>true</generateAPI>
                     </configuration>
                 </execution>
                 <execution>
