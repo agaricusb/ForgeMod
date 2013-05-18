@@ -18,7 +18,7 @@
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>8</forge.minorversion>
     <forge.revisionversion>0</forge.revisionversion>
-    <forge.build>684</forge.build>
+    <forge.build>703</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forge.version>${forge.mainversion}.${forge.build}</forge.version>
     <forgemodparent.revision>R1</forgemodparent.revision> <!-- increment when this parent pom is updated -->
