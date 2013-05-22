@@ -14,20 +14,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <minecraft.version>1.5.2</minecraft.version>
-    <minecraft_version>1_5_2</minecraft_version>
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>8</forge.minorversion>
     <forge.revisionversion>0</forge.revisionversion>
-    <forge.build>703</forge.build>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
-    <forge.version>${forge.mainversion}.${forge.build}</forge.version>
-    <forgemodparent.revision>R2</forgemodparent.revision> <!-- increment when this parent pom is updated -->
-    <fml.at>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/common/fml_at.cfg</fml.at>
-    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/cd40aba38e9b6d2753faa6b4dc8d083dc753b0de/common/forge_at.cfg</forge.at>
-    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/conf/</mcp.mappings>
+    <forgeapi.version>${minecraft.version}-${forge.mainversion}-SNAPSHOT</forgeapi.version>
     <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/c71945e6f89bf00a1ce3e3929ce07c019b19fc0e/1.5.2/pkgmcp2numpkg.srg</reobf.mappings>
-    <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
-    <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
   </properties>
   <pluginRepositories>
     <pluginRepository>
@@ -41,25 +33,15 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-  <profiles>
-   <profile>
-    <activation>
-        <activeByDefault>true</activeByDefault>
-    </activation>
-    <id>built</id>
-    <dependencies>
-      <!-- after the remapped artifact is built, add it a dependency -->
-      <dependency>
-        <groupId>net.minecraftforge</groupId>
-        <artifactId>minecraft-forge</artifactId>
-        <version>${forge.version}-${forgemodparent.revision}${forge.suffix}</version>
+  <dependencies>
+     <dependency>
+        <groupId>net.md-5</groupId>
+        <artifactId>ForgeAPI</artifactId>
+        <version>${forgeapi.version}</version>
         <type>jar</type>
         <scope>compile</scope>
-      </dependency>
-    </dependencies>
-   </profile>
-  </profiles>
-  <dependencies>
+     </dependency>
+
     <dependency>
         <groupId>org.ow2.asm</groupId>
         <artifactId>asm-all</artifactId>
@@ -103,31 +85,6 @@
             <version>1.1-SNAPSHOT</version>
             <executions>
                 <execution>
-                    <id>install-remapped-forge</id>
-                    <phase>initialize</phase>
-                    <goals>
-                        <goal>install-remapped-file</goal>
-                    </goals>
-                    <configuration>
-                        <groupId>net.minecraftforge</groupId>
-                        <artifactId>minecraft-forge</artifactId>
-                        <version>${forge.version}-${forgemodparent.revision}${forge.suffix}</version>
-                        <inJars>
-                            <param>http://assets.minecraft.net/${minecraft_version}/minecraft_server.jar</param>
-                            <param>http://assets.minecraft.net/${minecraft_version}/minecraft.jar</param>
-                            <param>http://files.minecraftforge.net/minecraftforge/minecraftforge-universal-${minecraft.version}-${forge.version}.zip</param>
-                        </inJars>
-                        <srgIn>${mcp.mappings}</srgIn> <!-- obf -> mcp csvnames for development -->
-                        <accessTransformers>
-                            <param>${fml.at}</param>
-                            <param>${forge.at}</param>
-                            <param>pattern:*-synthetic **</param> <!-- magic -->
-                            <param>${mod.at}</param> <!-- optional AT from mod itself -->
-                        </accessTransformers>
-                        <generateAPI>true</generateAPI>
-                    </configuration>
-                </execution>
-                <execution>
                     <id>reobfuscate</id>
                     <phase>package</phase>
                     <goals>
@@ -136,7 +93,7 @@
                     <configuration>
                         <srgIn>${reobf.mappings}</srgIn> <!-- mcp csvnames -> mcp srgnames for version-independence -->
                         <remappedDependencies>
-                            <param>net.minecraftforge:minecraft-forge:${forge.version}-${forgemodparent.revision}${forge.suffix}:jar</param>
+                            <param>net.md-5:ForgeAPI:${forgeapi.version}:jar</param>
                         </remappedDependencies>
                     </configuration>
                 </execution>
