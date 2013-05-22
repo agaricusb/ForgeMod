@@ -13,7 +13,6 @@ Add to your parent pom.xml (for Minecraft 1.5.2, built with srgnames for 1.5.1 a
 
 then run:
 
-    mvn initialize -P -built
     mvn package
 
 The mod will be compiled and reobfuscated in `target/`.
