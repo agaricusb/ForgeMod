@@ -67,6 +67,11 @@
         <artifactId>argo</artifactId>
         <version>3.2</version>
     </dependency>
+    <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>2.10.1</version>
+    </dependency>
   </dependencies>
   <build>
     <resources>
