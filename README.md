@@ -8,7 +8,7 @@ Add to your parent pom.xml (for Minecraft 1.5.2, built with srgnames for 1.5.1 a
       <parent>
         <groupId>net.md-5</groupId>
         <artifactId>ForgeMod</artifactId>
-        <version>1.5.2-7.8.0-SNAPSHOT</version>
+        <version>1.5.2-7.8.1-SNAPSHOT</version>
       </parent>
 
 then run:

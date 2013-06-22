@@ -7,7 +7,7 @@
   </parent>
   <groupId>net.md-5</groupId>
   <artifactId>ForgeMod</artifactId>
-  <version>1.5.2-7.8.0-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
+  <version>1.5.2-7.8.1-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
   <name>ForgeMod</name>
   <packaging>pom</packaging>
   <url>https://github.com/agaricusb/ForgeMod</url>
@@ -16,7 +16,7 @@
     <minecraft.version>1.5.2</minecraft.version>
     <forge.majorversion>7</forge.majorversion>
     <forge.minorversion>8</forge.minorversion>
-    <forge.revisionversion>0</forge.revisionversion>
+    <forge.revisionversion>1</forge.revisionversion>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forgeapi.version>${minecraft.version}-${forge.mainversion}-SNAPSHOT</forgeapi.version>
     <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/8e43f8f01f9fa7c995f2415d6f5fc8f6f2a69509/1.5.2/pkgmcp2numpkg.srg</reobf.mappings>
