@@ -3,12 +3,12 @@ ForgeMod
 
 Maven parent POM for building mods with [Minecraft Forge](http://minecraftforge.net/) using [SpecialSourceMP](https://github.com/agaricusb/SpecialSourceMP).
 
-Add to your parent pom.xml (for Minecraft 1.5.2, built with srgnames for 1.5.1 and 1.5.0 support; see also [1.4.7](https://github.com/agaricusb/ForgeMod/tree/MC147)):
+Add to your parent pom.xml (for Minecraft 1.6.2):
 
       <parent>
         <groupId>net.md-5</groupId>
         <artifactId>ForgeMod</artifactId>
-        <version>1.5.2-7.8.1-SNAPSHOT</version>
+        <version>1.6.2-9.10.0-SNAPSHOT</version>
       </parent>
 
 then run:
