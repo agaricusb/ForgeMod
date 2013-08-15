@@ -19,7 +19,7 @@
     <forge.revisionversion>0</forge.revisionversion>
     <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
     <forgeapi.version>${minecraft.version}-${forge.mainversion}-SNAPSHOT</forgeapi.version>
-    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/1f1f64f2f92a3f79c9e6fcc877c6c01e096b0a68/1.6.2/pkgmcp2numpkg.srg</reobf.mappings>
+    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/8ca7ba25dfd67eae43b3c73d02603ff6c085a6d7/1.6.2/pkgmcp2numpkg.srg</reobf.mappings>
   </properties>
   <pluginRepositories>
     <pluginRepository>
